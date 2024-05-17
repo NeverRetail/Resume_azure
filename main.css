@@ -56,6 +56,9 @@ h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
+.fa-brands fa-github{
+    color: black;
+}
 
 @media (max-width: 768px) {
     body {
