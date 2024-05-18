@@ -59,6 +59,9 @@ h3 {
 .fa-brands fa-github{
     color: black;
 }
+.underline {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
     body {
@@ -70,4 +73,6 @@ h3 {
     header h1 {
         font-size: 1em;
     }
+    
 }
+
