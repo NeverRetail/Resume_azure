@@ -41,6 +41,10 @@ section {
     margin-bottom: 10px;
     text-align: center;
 }
+a{
+    color:white;
+    text-decoration: none;
+}
 
 ul {
     list-style-type: disc;
