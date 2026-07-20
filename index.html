@@ -4,208 +4,493 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Wade Wilson</title>
+    <title>Wade Wilson — Cloud Engineer</title>
+    <meta name="description" content="Wade Wilson is a Cloud Engineer with 3+ years designing, deploying, and securing infrastructure across Azure and AWS using Terraform, Bicep, and automation-first practices.">
+    <meta name="author" content="Wade Wilson">
+
+    <meta property="og:title" content="Wade Wilson — Cloud Engineer">
+    <meta property="og:description" content="Cloud Engineer with 3+ years across Azure and AWS — infrastructure as code, automation, and security hardening.">
+    <meta property="og:type" content="website">
+    <!-- TODO: replace with the site's production URL once a custom domain / confirmed Azure Static Web Apps hostname is available -->
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Wade Wilson — Cloud Engineer">
+    <meta name="twitter:description" content="Cloud Engineer with 3+ years across Azure and AWS — infrastructure as code, automation, and security hardening.">
+
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M20 41a9 9 0 0 1 1-18 12 12 0 0 1 23 3 8 8 0 0 1-2 15H20z' fill='white'/%3E%3C/svg%3E">
+
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://kit.fontawesome.com/a033fd16bd.js" crossorigin="anonymous"></script>
 
-
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem('theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 
 <body>
-    <header>
-        <h1>Wade Wilson</h1>
-        <p>Washington, DC, 20036 | (540) 903-3108 |<a href="mailto:wade@wade-wilson.com"> wade@wade-wilson.com</a> </p>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <a href="https://https://github.com/NeverRetail" i class="fa-brands fa-github fa-2xl"
-            style="color: white;"></i></a>
-        <a href="https://www.linkedin.com/in/wadewilson199" i class="fa-brands fa-linkedin fa-2xl"
-            style="color: white;"></i></a>
-        <a href="https://nevertech.net/" i class="fa-solid fa-blog fa-2xl" style="color: white;"></i></a>
-        <!-- <a href="www.github.com" i class="fa-brands fa-youtube fa-2xl" style="color: white;"></i></a> -->
-    </header>
+    <nav class="site-nav" aria-label="Primary">
+        <div class="container nav-inner">
+            <a class="brand" href="#top" aria-label="Wade Wilson, back to top">
+                <span class="brand-mark" aria-hidden="true">WW</span>
+                <span class="brand-name">Wade Wilson</span>
+            </a>
 
-    <section>
-        <div class="section-title">Summary</div>
-        <p>
-        <p>Dynamic Cloud Engineer with a strong foundation in systems administration, infrastructure automation, and
-            cloud platform management. Proficient in PowerShell, Bash, and Python scripting to streamline workflows,
-            enforce CIS security benchmarks, and drive infrastructure-as-code practices. Experienced in securing and
-            maintaining both Windows and Linux environments, including hardening, patching, and containerization with
-            Docker. Adept at designing and deploying cloud-native solutions using AWS and Azure, with a focus on
-            operational efficiency, scalability, and security. Known for delivering high-impact solutions, providing
-            responsive technical support, and continuously optimizing system performance in fast-paced IT environments.
-        </p>
-        </p>
-    </section>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
 
-    <section>
-        <div class="section-title">Technical Skills & Core Competencies</div>
-        <ul>
-            <li><span class="underline">Cloud Computing Solutions:</span> Extensive experience in designing, deploying,
-                and managing cloud
-                infrastructure with a primary focus on Azure, as well as proficiency in AWS and GCP.</li>
-            <li><span class="underline">Distributed Systems:</span> Expertise in building and managing distributed
-                systems and applications.</li>
-            <li><span class="underline">Cloud Architecture:</span> Designing scalable, secure, and cost-effective cloud
-                solutions.</li>
-            <li><span class="underline">DevOps Practices:</span> Proficiency in CI/CD pipelines, infrastructure as code
-                (IaC), and automated
-                deployments using tools like Azure DevOps, Terraform, and Jenkins.</li>
-            <li><span class="underline">Containerization & Orchestration:</span> Experience with Docker and Kubernetes
-                for container management and
-                orchestration.</li>
-            <li><span class="underline">Security & Compliance:</span> Ensuring cloud security best practices and
-                compliance with industry standards.</li>
-            <li><span class="underline">Networking:</span> Knowledge of cloud networking, VPC, VPN, DNS, load balancing,
-                and network security.</li>
-            <li><span class="underline">Database Management:</span> Experience with cloud-based databases such as Azure
-                SQL, Amazon RDS, and Google
-                Cloud SQL.</li>
-            <li><span class="underline">Monitoring & Logging:</span> Implementing and managing monitoring, logging, and
-                alerting solutions using tools
-                like Azure Monitor, AWS CloudWatch, and Google Stackdriver.</li>
-            <li><span class="underline">Scripting & Automation:</span> Proficiency in scripting languages like
-                PowerShell, Bash, and Python for
-                automation and task management.</li>
-            <li><span class="underline">System Administration:</span> Managing and maintaining various operating systems
-                including Microsoft Windows,
-                Mac OS, and Linux (Ubuntu, Mint, Fedora).</li>
-            <li><span class="underline">Technical Support & Troubleshooting:</span> Providing high-level technical
-                support and troubleshooting for
-                hardware and software issues.</li>
-            <li><span class="underline">Project Management:</span> Strong skills in strategic and analytical planning,
-                managing cloud projects from
-                conception to deployment.</li>
-            <li><span class="underline">Exceptional Communication Skills:</span> Excellent communication and customer
-                service abilities to interact
-                with stakeholders and team members effectively.</li>
-            <li><span class="underline">Technological Solutions:</span> Creating and implementing innovative
-                technological solutions to meet business
-                requirements.</li>
-            <li><span class="underline">Data Analysis & Management:</span> Intensive data analysis, management, and
-                application design.</li>
-            <li><span class="underline">Hardware Support:</span> Knowledge in supporting and maintaining IT hardware.
-            </li>
-            <li><span class="underline">Networking Protocols:</span> Understanding of network cabling, HTTP, DNS, and
-                TLS.</li>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#cloud-certs">Cloud &amp; Certs</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
 
-            <!--- <li>Information & Technology</li>
-            <li>Assurance Team Management</li>
-            <li>Exceptional Communication Skills & Customer Service</li>
-            <li>Help Desk Support Management</li>
-            <li>Strategic & Analytical Planning</li>
-            <li>Technological Solutions</li>
-            <li>Analytical & Critical Thinking Skills</li>
-            <li>Hardware/Software Support</li>
-            <li>Intensive Data Analysis & Management</li>
-            <li>Data Structure & Application Design</li>
-            <li>Cloud Computing Solutions</li>
-            <li>Distributed Systems</li>
-            <li>Microsoft Office (Word, Excel, PowerPoint, Publisher, Outlook)</li>
-            <li>Microsoft Windows, Mac OS, Linux</li>
-            <li>Cloud, SQL, Ubuntu, Mint, Fedora, MaaS360</li>
-            <li>Network Cabling (Cat5E Cat6), HTTP, DNS, TLS</li>
-            <li>AWS, Azure, GCP</li> --->
+            <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-        </ul>
-    </section>
+    <main id="main">
+        <header class="hero" id="top">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <p class="eyebrow">Cloud Engineer</p>
+                <h1>Wade Wilson</h1>
+                <p class="tagline">Designing, deploying, and securing infrastructure across Azure &amp; AWS — automation-first, security-hardened, built to scale.</p>
 
-    <section>
-        <div class="section-title">Professional Experience</div>
+                <ul class="contact-list">
+                    <li>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Washington, DC, 20036</span>
+                    </li>
+                    <li>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:+15409033108">(540) 903-3108</a>
+                    </li>
+                    <li>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22 6 12 13 2 6"></polyline>
+                        </svg>
+                        <a href="mailto:wade@wade-wilson.com">wade@wade-wilson.com</a>
+                    </li>
+                </ul>
 
-        <h3>Cloud Engineer | TSI VA (EJF Capital LLC), Arlington, VA | March 2023 – Present</h3>
-        <ul>
-            <li>Engineered and deployed a production-grade Cyberhaven alerting system on Ubuntu Server, leveraging
-                Postfix, Bash, and Python to deliver real-time email alerts to the CTO, automating threat visibility and
-                reducing reliance on manual portal checks by over 90%.</li>
-            <li>Provisioned and maintained a self-hosted OpenVAS/Greenbone vulnerability scanning server with automated
-                cron jobs for continuous updates, enhancing security posture across cloud-linked infrastructure with
-                weekly scan insights.</li>
-            <li>Administered Linux-based infrastructure, implementing UFW firewall rules, SSH key management, and
-                automated patching via Unattended Upgrades, aligning with cloud security best practices and minimizing
-                manual intervention.</li>
-            <li>Deployed and managed Docker Engine across multiple Ubuntu cloud instances to support containerized
-                development pipelines, improving deployment consistency and reducing build failures by 30%.</li>
-            <li>Developed scalable Python automation tools to scrape and archive content from internal EJF websites,
-                exporting to HTML and PDF formats for long-term cloud storage and audit compliance.</li>
-            <li>Automated DNS configuration backups using PowerShell, scripting a daily task to extract and preserve
-                external DNS records, ensuring cloud DNS continuity and rollback readiness.</li>
+                <a class="btn-download" href="Wade_Wilson_Resume.pdf" download="Wade_Wilson_Resume.pdf">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download Résumé (PDF)</span>
+                </a>
 
-        </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://github.com/NeverRetail" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson on GitHub (opens in new tab)">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wadewilson199" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson on LinkedIn (opens in new tab)">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nevertech.net/" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson's blog, NeverTech (opens in new tab)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                                <circle cx="5" cy="19" r="1"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
 
-        <h3>Facility Operations Center Support Engineer II | AMAZON WEB SERVICES (AWS), Sterling, VA | June 2018 – April
-            2022</h3>
-        <ul>
-            <li>Monitored the global data center and Amazon facilities infrastructure platform, ensuring the smooth
-                operation of various computer equipment.</li>
-            <li>Maximized online system availability, automated processes, and managed tasks efficiently in a 24/7
-                environment.</li>
-            <li>Managed HVAC, electrical/energy, airflow, and fire/safety systems to uphold equipment efficiencies and
-                reliability.</li>
-            <li>Completed all necessary reports, logs, and records to accurately document equipment and systems,
-                promptly reporting equipment failures.</li>
-            <li>Assisted in developing external and internal communications and coordinated emergency recovery efforts,
-                escalating matters requiring advanced solutions or guidance in virtualization.</li>
-            <li>Conducted highly complex and technical special assignments, devising alternative strategies to
-                accomplish specific objectives.</li>
-        </ul>
+                <a class="scroll-cue" href="#stats" aria-label="Scroll to career highlights">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </header>
 
-        <h3>Data Center Technician | AMAZON WEB SERVICES (AWS), Sterling, VA | December 2017 – June 2018</h3>
-        <ul>
-            <li>Performed preventative maintenance on equipment and data network devices within Amazon S3, managing
-                tight spaces, cables, and security enhancements, participating in building projects, and utility checks
-                for optimal functionality.</li>
-            <li>Monitored the operation of all network processes, collaborating directly with the engineering department
-                to resolve complex problems and distributed computing tasks as needed, while implementing operational
-                excellence and driving process improvement initiatives.</li>
-            <li>Demonstrated proficient troubleshooting skills and extensive working knowledge of Linux and Windows
-                Operating Systems in x86 or x64 systems, including remotely accessing cloud servers to diagnose and
-                resolve critical or escalated technical issues affecting equipment.</li>
-            <li>Provided real-time support to clients and colleagues, promptly troubleshooting problems as they arose,
-                and imparting knowledge to other data center personnel on effectively troubleshooting hardware,
-                software, and automation scripts to ensure the smooth execution of routine tasks.</li>
-        </ul>
+        <section id="stats" class="stats" aria-label="Career highlights" data-reveal>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-number">3+</p>
+                        <p class="stat-label">Years in Cloud &amp; Infrastructure</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">40%</p>
+                        <p class="stat-label">Infrastructure Footprint Reduction</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">90%+</p>
+                        <p class="stat-label">Reduction in Manual Security Checks</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">5–10 min</p>
+                        <p class="stat-label">VM Provisioning via Bicep IaC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h3>Hardware Build Technician | GREYSTONE IT, Warrenton, VA | September 2016 – December 2017</h3>
-        <ul>
-            <li>Managed operational activities to ensure efficient customer support, promptly resolving issues and
-                providing immediate solutions.</li>
-            <li>Evaluated technology against established standards and recommended solutions to guarantee compatibility
-                with client machines.</li>
-            <li>Implemented the ServiceNow ticketing system to address client inquiries effectively, collaborating
-                directly with engineers to test and troubleshoot System Center Configuration Manager (SSCM).</li>
-            <li>Utilized MaaS360 Mobile Device Management to configure client iPad and LG tablets for optimal
-                performance.</li>
-            <li>Oversaw the deployment of Linux or Microsoft computers at various Greystone locations as required.</li>
-        </ul>
+        <section id="about" class="about" data-reveal>
+            <div class="container">
+                <h2>About</h2>
+                <div class="about-grid">
+                    <article class="about-summary">
+                        <p>Cloud Engineer with 3+ years of hands-on experience designing, deploying, and securing infrastructure across Azure and AWS, built on a systems administration foundation spanning Windows and Linux environments. Skilled in PowerShell, Python, and Bash automation, infrastructure-as-code (Terraform, Bicep), and CIS benchmark hardening. Experienced with Docker containerization, patch management, and cloud-native architecture with an emphasis on scalability, security, and operational efficiency.</p>
+                    </article>
+                    <aside class="about-competencies">
+                        <h3>Core Competencies</h3>
+                        <ul class="pill-list pill-list-outline">
+                            <li class="pill">Cloud Infrastructure Management</li>
+                            <li class="pill">Automation &amp; Scripting (PowerShell, Bash, Python)</li>
+                            <li class="pill">Linux &amp; Windows Server Administration</li>
+                            <li class="pill">Docker &amp; Containerization</li>
+                            <li class="pill">Vulnerability Management &amp; Patch Automation</li>
+                            <li class="pill">Active Directory &amp; DNS Management</li>
+                            <li class="pill">Technical Troubleshooting &amp; Incident Response</li>
+                            <li class="pill">DevOps Practices &amp; CI/CD Familiarity</li>
+                            <li class="pill">Infrastructure as Code (IaC) Principles</li>
+                            <li class="pill">Customer-Focused IT Solutions</li>
+                            <li class="pill">Cybersecurity Best Practices</li>
+                            <li class="pill">Distributed Systems &amp; Networking Fundamentals</li>
+                            <li class="pill">Terraform</li>
+                            <li class="pill">Bicep</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-        <h3>General Store Manager/Lead Computer Technician | ROCKIT REPAIRS, Fredericksburg, VA | August 2013 –
-            September 2016</h3>
-        <ul>
-            <li>Led business operations, managing workforce dynamics, devising solutions for intricate corporate issues,
-                leveraging data analysis and process enhancement to drive performance advancements, and establishing
-                policies to achieve objectives.</li>
-            <li>Demonstrated proficiency in administering collaborative customer care services, meticulously addressing
-                technical issues such as antivirus or malware program installations, hard drive reformatting, operating
-                system installations or reinstalls, hardware replacements, and networking operations.</li>
-        </ul>
-    </section>
+        <section id="skills" class="skills" data-reveal>
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-category">
+                        <h3>Cloud Platforms &amp; Services</h3>
+                        <ul class="pill-list">
+                            <li class="pill">Azure</li>
+                            <li class="pill">Azure Storage</li>
+                            <li class="pill">AWS EC2</li>
+                            <li class="pill">AWS S3</li>
+                            <li class="pill">AWS FSx</li>
+                            <li class="pill">AWS Kinesis</li>
+                            <li class="pill">AWS RDS</li>
+                            <li class="pill">AWS DataSync</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>Automation &amp; Scripting</h3>
+                        <ul class="pill-list">
+                            <li class="pill">PowerShell</li>
+                            <li class="pill">Bash</li>
+                            <li class="pill">Python</li>
+                            <li class="pill">Cron</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>Operating Systems &amp; Virtualization</h3>
+                        <ul class="pill-list">
+                            <li class="pill">Windows Server</li>
+                            <li class="pill">Ubuntu</li>
+                            <li class="pill">Kali Linux</li>
+                            <li class="pill">Fedora</li>
+                            <li class="pill">Hyper-V</li>
+                            <li class="pill">Proxmox</li>
+                            <li class="pill">WSL2</li>
+                            <li class="pill">VirtualBox</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>Containers</h3>
+                        <ul class="pill-list">
+                            <li class="pill">Docker</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>Networking &amp; Security</h3>
+                        <ul class="pill-list">
+                            <li class="pill">SSH</li>
+                            <li class="pill">UFW</li>
+                            <li class="pill">Postfix</li>
+                            <li class="pill">DNS</li>
+                            <li class="pill">DHCP</li>
+                            <li class="pill">TLS</li>
+                            <li class="pill">SMB</li>
+                            <li class="pill">NACLs</li>
+                            <li class="pill">Security Groups</li>
+                            <li class="pill">Fail2ban</li>
+                            <li class="pill">OpenVAS</li>
+                            <li class="pill">Cyberhaven</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>Databases &amp; Web</h3>
+                        <ul class="pill-list">
+                            <li class="pill">SQL</li>
+                            <li class="pill">HTML</li>
+                            <li class="pill">CSS</li>
+                            <li class="pill">Apache2</li>
+                        </ul>
+                    </article>
+                    <article class="skill-category">
+                        <h3>IT &amp; Productivity Administration</h3>
+                        <ul class="pill-list">
+                            <li class="pill">Microsoft 365 Administration</li>
+                            <li class="pill">Intune</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <div class="section-title">Education</div>
-        <p class="college">Bachelor of Science, Cloud Computing | Western Governors University | Graduated | 2025</p>
-    </section>
+        <section id="cloud-certs" class="cloud-certs" data-reveal>
+            <div class="container">
+                <h2>Cloud Platforms &amp; Certifications</h2>
 
-    <section>
-        <div class="section-title">Certifications</div>
-        <ul class="certs">
-            <li>CompTIA A+ | Network+ | Security+ | Cloud+</li>
-            <li>AWS Certified Cloud practitioner | Solutions Architect - Associate </li>
-            <li>Microsoft AZ-900 Azure Fundamentals | AZ-204 Azure Developer - Associate</li>
-            <li>ITIL 4 Foundation Certificate in IT Service Management</li>
-            <li>LPI Linux Essentials</li>
-        </ul>
-    </section>
+                <div class="badge-row">
+                    <div class="badge-chip badge-azure"><span class="badge-mark">AZ</span><span>Azure</span></div>
+                    <div class="badge-chip badge-aws"><span class="badge-mark">AWS</span><span>AWS</span></div>
+                    <div class="badge-chip badge-terraform"><span class="badge-mark">TF</span><span>Terraform</span></div>
+                    <div class="badge-chip badge-bicep"><span class="badge-mark">BI</span><span>Bicep</span></div>
+                    <div class="badge-chip badge-docker"><span class="badge-mark">DK</span><span>Docker</span></div>
+                </div>
+
+                <div class="cert-grid">
+                    <article class="cert-card">
+                        <h3>CompTIA</h3>
+                        <ul>
+                            <li>A+</li>
+                            <li>Network+</li>
+                            <li>Security+</li>
+                            <li>Cloud+</li>
+                            <li>Project+</li>
+                        </ul>
+                    </article>
+                    <article class="cert-card">
+                        <h3>AWS</h3>
+                        <ul>
+                            <li>Certified Cloud Practitioner</li>
+                            <li>Solutions Architect – Associate</li>
+                        </ul>
+                    </article>
+                    <article class="cert-card">
+                        <h3>Microsoft</h3>
+                        <ul>
+                            <li>AZ-900: Azure Fundamentals</li>
+                            <li>AZ-204: Azure Developer Associate</li>
+                        </ul>
+                    </article>
+                    <article class="cert-card">
+                        <h3>ITIL</h3>
+                        <ul>
+                            <li>ITIL 4 Foundation Certificate in IT Service Management</li>
+                        </ul>
+                    </article>
+                    <article class="cert-card">
+                        <h3>LPI</h3>
+                        <ul>
+                            <li>Linux Essentials</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience" data-reveal>
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Cloud Engineer</h3>
+                            <p class="timeline-meta">TSI VA (EJF Capital LLC) · Arlington, VA</p>
+                            <p class="timeline-dates">March 2023 – Present</p>
+                        </div>
+                        <ul>
+                            <li>Led Microsoft 365 tenant-to-tenant migration for 20 users, including Exchange Online mailboxes, Sharepoint sites, OneDrive data, and Teams, with zero data loss and minimal downtime.</li>
+                            <li>Engineered and deployed a production-grade Cyberhaven alerting system on Ubuntu Server, leveraging Postfix, Bash, and Python to deliver real-time email alerts to the CTO, automating threat visibility and reducing reliance on manual portal checks by over 90%.</li>
+                            <li>Provisioned and maintained a self-hosted OpenVAS/Greenbone vulnerability scanning server with automated cron jobs for continuous updates, enhancing security posture across cloud-linked infrastructure with weekly scan insights.</li>
+                            <li>Administered Linux-based infrastructure, implementing UFW firewall rules, SSH key management, and automated patching via Unattended Upgrades, aligning with cloud security best practices and minimizing manual intervention.</li>
+                            <li>Developed scalable Python automation tools to scrape and archive content from internal EJF websites, exporting to HTML and PDF formats for long-term cloud storage and audit compliance.</li>
+                            <li>Automated DNS configuration backups using PowerShell, scripting a daily task to extract and preserve external DNS records, ensuring cloud DNS continuity and rollback readiness.</li>
+                            <li>Architected and executed Azure cloud migration for 10+ on-premises VMs, achieving 40% infrastructure footprint reduction and zero unplanned downtime through meticulous planning, testing, and phased cutover strategy.</li>
+                            <li>Developed modular Bicep infrastructure-as-code templates for Azure VM, networking, and security deployments, reducing provisioning time from hours to 5-10 minutes while eliminating configuration drift and manual errors.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Facility Operations Center Support Engineer II</h3>
+                            <p class="timeline-meta">Amazon Web Services (AWS) · Sterling, VA</p>
+                            <p class="timeline-dates">June 2018 – April 2022</p>
+                        </div>
+                        <ul>
+                            <li>Monitored the global data center and Amazon facilities infrastructure platform, ensuring the smooth operation of various computer equipment.</li>
+                            <li>Maximized online system availability, automated processes, and managed tasks efficiently in a 24/7 environment.</li>
+                            <li>Managed HVAC, electrical/energy, airflow, and fire/safety systems to uphold equipment efficiencies and reliability.</li>
+                            <li>Completed all necessary reports, logs, and records to accurately document equipment and systems, promptly reporting equipment failures. Assisted in developing external and internal communications and coordinated emergency recovery efforts, escalating matters requiring advanced solutions or guidance in virtualization.</li>
+                            <li>Conducted highly complex and technical special assignments, devising alternative strategies to accomplish specific objectives.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Data Center Technician 3</h3>
+                            <p class="timeline-meta">Amazon Web Services (AWS) · Sterling, VA</p>
+                            <p class="timeline-dates">December 2017 – June 2018</p>
+                        </div>
+                        <ul>
+                            <li>Performed preventative maintenance on equipment and data network devices within Amazon S3, managing tight spaces, cables, and security enhancements, participating in building projects, and utility checks for optimal functionality.</li>
+                            <li>Monitored the operation of all network processes, collaborating directly with the engineering department to resolve complex problems and distributed computing tasks as needed, while implementing operational excellence and driving process improvement initiatives.</li>
+                            <li>Demonstrated proficient troubleshooting skills and extensive working knowledge of Linux and Windows Operating Systems in x86 or x64 systems, including remotely accessing cloud servers to diagnose and resolve critical or escalated technical issues affecting equipment.</li>
+                            <li>Provided real-time support to clients and colleagues, promptly troubleshooting problems as they arose, and imparting knowledge to other data center personnel on effectively troubleshooting hardware, software, and automation scripts to ensure the smooth execution of routine tasks.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Hardware Build Technician</h3>
+                            <p class="timeline-meta">Greystone IT · Warrenton, VA</p>
+                            <p class="timeline-dates">September 2016 – December 2017</p>
+                        </div>
+                        <ul>
+                            <li>Managed operational activities to ensure efficient customer support, promptly resolving issues and providing immediate solutions.</li>
+                            <li>Evaluated technology against established standards and recommended solutions to guarantee compatibility with client machines.</li>
+                            <li>Implemented the ServiceNow ticketing system to address client inquiries effectively, collaborating directly with engineers to test and troubleshoot System Center Configuration Manager (SCCM).</li>
+                            <li>Utilized MaaS360 Mobile Device Management to configure client iPad and LG tablets for optimal performance.</li>
+                            <li>Oversaw the deployment of Linux or Microsoft computers at various Greystone locations as required.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>General Store Manager/Lead Computer Technician</h3>
+                            <p class="timeline-meta">Rockit Repairs · Fredericksburg, VA</p>
+                            <p class="timeline-dates">August 2013 – September 2016</p>
+                        </div>
+                        <ul>
+                            <li>Led business operations, managing workforce dynamics, devising solutions for intricate corporate issues, leveraging data analysis and process enhancement to drive performance advancements, and establishing policies to achieve objectives.</li>
+                            <li>Demonstrated proficiency in administering collaborative customer care services, meticulously addressing technical issues such as antivirus or malware program installations, hard drive reformatting, operating system installations or reinstalls, hardware replacements, and networking operations.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education" data-reveal>
+            <div class="container">
+                <h2>Education</h2>
+                <article class="card education-card">
+                    <h3>Bachelor of Science, Cloud Computing</h3>
+                    <p>Western Governors University · Graduated 2025</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <ul class="contact-list">
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22 6 12 13 2 6"></polyline>
+                    </svg>
+                    <a href="mailto:wade@wade-wilson.com">wade@wade-wilson.com</a>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <a href="tel:+15409033108">(540) 903-3108</a>
+                </li>
+            </ul>
+
+            <ul class="social-links">
+                <li>
+                    <a href="https://github.com/NeverRetail" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson on GitHub (opens in new tab)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/wadewilson199" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson on LinkedIn (opens in new tab)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://nevertech.net/" target="_blank" rel="noopener noreferrer" aria-label="Wade Wilson's blog, NeverTech (opens in new tab)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M4 11a9 9 0 0 1 9 9"></path>
+                            <path d="M4 4a16 16 0 0 1 16 16"></path>
+                            <circle cx="5" cy="19" r="1"></circle>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a class="footer-download" href="Wade_Wilson_Resume.pdf" download="Wade_Wilson_Resume.pdf">Download résumé (PDF)</a>
+
+            <p class="footer-copy">© <span id="year"></span> Wade Wilson · Built with vanilla HTML, CSS &amp; JS · Hosted on Azure Static Web Apps</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
 </body>
 
 </html>
